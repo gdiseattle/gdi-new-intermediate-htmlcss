@@ -11,6 +11,9 @@ pre.massive code {
   font-size:90%;
 }
 
+.reveal section img.plain {
+  box-shadow: none;
+}
 /******************************
 * Class 1 Browser unordered list
 *******************************/
