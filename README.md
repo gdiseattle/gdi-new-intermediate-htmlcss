@@ -30,5 +30,5 @@ Host slides locally by running a server (port can change if needed):
 http-server -a localhost -p 9000
 ```
 
-Open in your favorite browser. Yay!
+Open http://localhost:9000 in your favorite web browser. Yay!
 
