@@ -1,11 +1,17 @@
-body {color: #333; 
-    font-family: helvetica, arial, sans-serif;
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic|Bree+Serif);
+
+body {
+    color: #333; 
+    font-family: 'Lato', sans-serif;
     padding-top: 70px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bree Serif', serif;
 }
 p {
     line-height: 20px;
 }
-nav {
+.main-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,20 +20,21 @@ nav {
     height: 70px;
     width: 100%;
 }
-nav ul {
+.main-nav ul {
 	float: right;
 }
-nav li {
+.main-nav li {
     float: left;
     width: auto;
 }
-nav li a {
+.main-nav li a {
     padding: 25px 10px;
     display: block;
     text-decoration: none;
     color: #333;
 }
-nav li a:hover {
+.main-nav li a:hover,
+.main-nav li a:focus {
     background: #e5e5e5;
 }
 #brand {
@@ -45,7 +52,7 @@ nav li a:hover {
 }
 
 #hero {
-	background: url(../images/flatirons.png) no-repeat top left;
+	background: url(../../images/alpinelakes.jpg) no-repeat top left;
 	text-align: center;
 	color: #fafafa;
 	background-size: cover;
@@ -54,27 +61,29 @@ nav li a:hover {
 }
 
 #hero img {
-	width: 150px; 
+    border: 4px solid white;
 	border-radius: 50%;
     margin-top: 30px;
+    width: 150px; 
 }
 #hero h2 {
     font-size: 400%;
     margin: 10px;
+    text-shadow: 2px 2px 2px #000;
 }
-#hero span {
+#hero span.city {
     border: 2px solid white;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 10px;
     font-size: 150%;
 }
-#main-content{
+#main-content {
     text-align: center;
     padding: 25px 0;
     overflow: hidden;
 }
-#main-content h3{
+#main-content h3 {
     font-size: 250%;
     margin: 20px 0;
 }
@@ -87,36 +96,41 @@ nav li a:hover {
     width: 70%;
     max-width:70%;
     border-radius: 50%;
-    border: 5px solid #57BEC5;
+    border: 5px solid #1C929A;
     margin-bottom: 20px;
 }
 .column h4 {
-    color: #57BEC5;
+    color: #1C929A;
     font-size: 150%;
     margin-bottom: 15px;
 }
 .column .btn {
-   border: 2px solid #57BEC5;
+    border: 2px solid #1C929A;
     padding: 10px 20px;
     display: inline-block;
     margin-top: 10px;
     font-size: 150%;
     text-decoration: none;
-    color: #57BEC5;
+    color: #1C929A;
 }
 
 #social {
-    background: #57BEC5;
+    background: #1C929A;
     color: #fafafa;
     padding: 25px 0;
     overflow: hidden;
 }
 #social ul {
-	width: 5200px;
-	margin: 0 auto;
+    width: 5200px;
+    margin: 0 auto;
 }
 #social li {
-	float: left;
-	width: auto;
-	padding: 20px;
+    float: left;
+    width: auto;
+    padding: 20px;
+}
+
+footer[role="contentinfo"] {
+    padding: 1em 0;
+    text-align: center;
 }
