@@ -1,7 +1,7 @@
 Intermediate HTML/CSS &amp; Intro to Responsive Design
 ================================
 
-*Forked from a curriculum by [http://github.com/gdiboulder/](GDI Boulder)*
+*Forked from a curriculum by [https://github.com/gdiboulder](GDI Boulder)*
 
 Slides: [http://gdiseattle.github.io/gdi-new-intermediate-htmlcss](http://gdiseattle.github.io/gdi-new-intermediate-htmlcss)
 
