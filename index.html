@@ -54,9 +54,11 @@
             </section>
             <section>
                 <h3>Class notes</h3>
-                <p>All slides are available to download at <a href="http://gdiseattle.github.io/gdi-new-intermediate-htmlcss">http://gdiseattle.github.io/gdi-new-intermediate-htmlcss</a>
+                <p>All slides are available at <a href="http://gdiseattle.github.io/gdi-new-intermediate-htmlcss">
+                  http://gdiseattle.github.io/gdi-new-intermediate-htmlcss</a>
                 </p>
-                <p>All class slides are also available on github at <a href="https://github.com/gdiseattle">github.com/gdiseattle</a>
+                <p>The slide repository is also available on Github at <a href="https://github.com/gdiseattle/gdi-new-intermediate-htmlcss">
+                  http://github.com/gdiseattle/gdi-new-intermediate-htmlcss</a>
                 </p>
             </section>
             <!-- Welcome-->
@@ -78,10 +80,10 @@
                 <div>
                     <h4>Marcy Sutton</h4>
                     <ul>
-                        <li>In week 1 of a new job at Adobe</li>
-                        <li>Accessibility Engineer and web developer</li>
+                        <li>Accessibility Engineer at Adobe</li>
                         <li>Co-leader of Girl Develop It Seattle</li>
                         <li>International public speaker</li>
+                        <li>Animal lover</li>
                         <li>Twitter: <a href="http://twitter.com/marcysutton">@marcysutton</a>
                         </li>
                         <li>E-mail: <a href="mailto:marcy@girldevelopit.com">marcy@girldevelopit.com</a>
@@ -114,7 +116,9 @@
             </section>
             <section>
                 <h3>Workshop files</h3>
-                <p>Last reminder to download the files for today's class! <a href="http://gdiseattle.github.io/gdi-new-intermediate-htmlcss/workshop-files.zip" target="blank">http://gdiseattle.github.io/gdi-new-intermediate-htmlcss</a>
+                <p>Last reminder to download the files for today's class!
+                  <a href="http://gdiseattle.github.io/gdi-new-intermediate-htmlcss/workshop-files.zip" target="blank">
+                    http://gdiseattle.github.io/gdi-new-intermediate-htmlcss/workshop-files.zip</a>
                 </p>
                 <ul>
                     <li>We have provided a folder that contains sample images for you to use today. We encourage you to be creative so don't feel like you're restricted to these images</li>
@@ -188,7 +192,7 @@
                 <div>
                     Lists:
                     <pre><code class = "html">
-  list-style: none;
+  list-style-type: square;
 </code></pre>
                 </div>
             </section>
@@ -244,6 +248,7 @@
                     <li>2. If the viewport is wider than 1440px, it will reach it's max width, and become centered in the viewport.</li>
                 </ul>
             </section>
+
             <section data-background="#f05b62">
                 <h1 style="color: #fafafa;">HTML5</h1>
             </section>
@@ -323,12 +328,14 @@
 
                 </ul>
             </section>
+
             <section>
                 <h3>So what's so cool about it?</h3>
-                <img src="images/html5.svg" style="width:25%" alt="" class="no-border" />
+                <img src="images/html5.svg" style="width:25%" alt="HTML 5" class="no-border" />
                 <p>Too much to cover in our time together</p>
                 <p>But here are some highlights:</p>
             </section>
+
             <section>
                 <h2>Marks some old things obsolete</h2>
                 <h4>Examples</h4>
@@ -345,7 +352,6 @@
                 <p>Gives some old elements semantic meaning and separates them from presentation (e.g.
                     <code>b, i, strong, em</code>)</p>
             </section>
-
 
             <!-- DOCTYPE -->
             <section>
@@ -425,6 +431,16 @@
                         <li>E.g. blog posts, news stories, comments, reviews, forum posts</li>
                     </ul>
                 </section>
+
+                <section>
+                    <h2>&lt;main&gt;</h2>
+                    <ul>
+                        <li>Semantic container for main content</li>
+                        <li>Only one instance per page allowed, with <a href="http://html5doctor.com/the-main-element/" title="HTML5 Doctor Main element documentation">
+                          some other restrictions</a></li>
+                        <li>Provides a landmark for screen reader users</li>
+                    </ul>
+                </section>
             </section>
 
             <section>
@@ -479,7 +495,7 @@
             <section>
                 <h3>Fixed Nav: CSS</h3>
                 <p>Because we've fixed the nav to the top of the viewport, we need to bump the content of the
-                    <code>body</code>down to be visible to the user.</p>
+                    <code>body</code> down to be visible to the user.</p>
                 <p>This should be the same, or more than, the height of the navigation bar.</p>
                 <pre><code class="css">
 body {
@@ -522,7 +538,8 @@ body {
             <section>
                 <h3>Fixed Nav: Adding a brand</h3>
                 <p>We can use an
-                    <code>H1</code>with text replacement to include a brand, or logo, in the corner that will still work if images are turned off, making it accessible to screen readers.</p>
+                    <code>H1</code> with text replacement to include a brand, or logo, in the corner
+                    that will still work if images are turned off, making it accessible to screen readers.</p>
                 <pre><code class="xml">
 <header role="banner">
     <nav class="main-nav">
@@ -605,7 +622,7 @@ body {
             <section>
                 <h3>What is a Hero?</h3>
                 <ul>
-                    <li>Large banner image, prominently placed on a web page, generally in the front and center</li>
+                    <li>Large banner image, prominently placed on a web page, generally front and center</li>
                     <li>First visual a visitor encounters on the site and its purpose is to present an overview of the site's most important content</li>
                     <li>Often consists of image and text, can be static or dynamic</li>
                 </ul>
@@ -632,13 +649,12 @@ body {
             </section>
             <section>
                 <h3>Hero: HTML</h3>
-                <p>Our Hero
-                    <code>section</code>, should look a little something like this:</p>
+                <p>Our hero section should look a little something like this:</p>
                 <pre><code class="xml">&lt;section id="hero">
     <img src="images/wally-wizard.jpg" alt="" />
     <h2>Wally Wallerson</h2>
     <span class="city">Seattle, WA</span>
-&lt;/section> </code></pre> 
+&lt;/section> </code></pre>
             </section>
             <section>
                 <h3>Hero: CSS</h3>
@@ -670,7 +686,7 @@ body {
                 <h3>Well, that was unexpected...</h3>
                 <p>Things that are wrong with this hero right now:
                     <ol>
-                        <li>That image of your face is way to big! And it's not even a circle!</li>
+                        <li>That profile image is way to big! And it's not even a circle!</li>
                         <li>The background image is way too large</li>
                         <li>The headline is really tiny</li>
                     </ol>
@@ -760,6 +776,8 @@ body {
                             <span class="green">Safari:</span>-webkit-</li>
                         <li>
                             <span class="green">Opera:</span>-o-</li>
+                        <li>
+                            <span class="green">IE/Microsoft:</span>-ms-</li>
                     </ul>
                 </section>
                 <section>
@@ -789,11 +807,11 @@ body {
                 </p>
                 <pre><code class="css">#hero {
     background: url(../images/alpinelakes.png) no-repeat top left;
+    background-size: cover;
     color: #fafafa;
     text-align: center;
     height: 350px;
     padding: 25px 0;
-    background-size: cover;
 }
 </code></pre>
                 <p>
@@ -801,10 +819,28 @@ body {
             </section>
 
             <section>
+              <h2>currentColor</h2>
+              <ul>
+                <li>A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentColor_keyword">keyword</a> for the calculated value of an element's color property</li>
+                <li>Great for inheriting colors!</li>
+              </ul>
+              <pre><code class="css">
+.slider {
+  border: 1px solid;
+  color: blue;
+}
+.slider .slider-handle {
+  background: currentColor;
+}
+              </pre></code>
+              <p><a href="http://simurai.com/blog/2014/05/04/cssconf/#color" target="_blank">Example</a></p>
+            </section>
+
+            <section>
                 <h3>Develop It!</h3>
                 <p>Let's make some small tweaks to the Hero</p>
                     <ul>
-                        <li>Use border-radius to make the hero profile image into a circle.</li>
+                        <li>Use <code>border-radius</code> to make the hero profile image into a circle.</li>
                         <li>Adjust the font size of the header.</li>
                         <li>Add a border to the span.</li>
                     </ul>
@@ -815,7 +851,7 @@ body {
             </section>
             <section>
                 <h3>Why 3 columns?</h3>
-                <p>Because 2 columns is so 2013</p>
+                <p>Because 2 columns is so 2014</p>
             </section>
             <section>
                 <h3>3 Column: HTML</h3>
@@ -827,9 +863,9 @@ body {
         &lt;h4>The Photographer&lt;/h4>
         &lt;p>I travel to some pretty awesome places...&lt;/p>
         &lt;a href="photos.html" class="btn">See my photos&lt;/a>
-    &lt;/article>   
-    &lt;!-- Repeat .column x3 -->
-&lt;/section> </code></pre> 
+    &lt;/article>
+    &lt;!-- Repeat for each column -->
+&lt;/section> </code></pre>
 
             </section>
             <section>
@@ -845,7 +881,7 @@ body {
             <section>
                 <h3>Wow. Large Images.</h3>
                 <p>The images didn't scale with the columns, because they ignore constraints like
-                    <code>div</code>width, unless you tell it to do so.</p>
+                    <code>div</code> width, unless you tell it to do so.</p>
                 <pre><code class="css">.column img {
     width: 90%;
     max-width: 90%;
@@ -860,7 +896,8 @@ body {
             </section>
             <section>
                 <h3>3 Column: Container</h3>
-                <p>We've got our 3 column layout set, our images are scaled based on the width of the column, but our columns are still bumping against the edges of the browser.</p>
+                <p>We've got our 3 column layout set, our images are scaled based on the width of the
+                  column, but our columns are still bumping against the edges of the browser.</p>
                 <pre><code class="xml">&lt;section id="main-content">
     &lt;div class="container">
         &lt;h3>...</h3>
@@ -879,26 +916,24 @@ body {
             </section>
 
             <section>
-                <h3>Main Content Landmark</h3>
-                <p>To help screen readers identify the main content area, we can use one <code>main</code> element per page. It can’t be used as a descendant of &lt;article>, &lt;aside>, &lt;footer>, &lt;header>, or &lt;nav>. <a href="http://html5doctor.com/the-main-element/" title="HTML5 Doctor Main element documentation">Reference</a></p>
-                <pre><code class="xml">&lt;main>
-    &lt;section id="hero">...&lt;/section>
-    &lt;section id="main-content">
-        &lt;div class="container">
-            &lt;h3>...</h3>
-            &lt;article class="column">
-                ...
-            &lt;/article>
-            &lt;article class="column">
-                ...
-            &lt;/article>
-            &lt;article class="column">
-                ...
-            &lt;/article>
-        &lt;/div>
-    &lt;/section>
-&lt;/main></code></pre>
+              <h2>Clearing floats</h2>
+              <ul>
+                <li>So that elements coming after our floats don't overlap, we need a
+                clearing element, sometimes called a "clearfix".</li>
+                <li>Any element can be used to clear floats using <code>clear: both;</code>.</li>
+                <li>To be extra crafty and efficient, try using it on a pseudo-element:</li>
+              </ul>
+              <pre><code class="css">
+#main-content:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+              </pre></code>
+              <p><a href="https://css-tricks.com/the-how-and-why-of-clearing-floats/" target="_blank">
+                More about float clearing</a></p>
             </section>
+
             <section>
                 <h3>Develop It!</h3>
                 <p>Let's make some small tweaks to these columns
@@ -906,6 +941,7 @@ body {
                         <li>Adjust the font size of the main header of the content area</li>
                         <li>Adjust the font size of the headers in the columns. Try changing their colors too.</li>
                         <li>Add a border to the images to make them stand out a bit more.</li>
+                        <li>Add a clear-fix after the columns</li>
                     </ul>
             </section>
             <section>
@@ -948,6 +984,27 @@ body {
   background: url(kiwi.svg);
   background-size: 100px 82px;
 }</code></pre>
+                </section>
+                <section>
+                  <h2>Inline SVG</h2>
+                  <p>Alternatively, you can include SVG markup directly in your HTML:</p>
+                  <pre><code class="html">
+&lt;ul id="socialIcons">
+  &lt;li>
+    &lt;a href="http://twitter.com/">
+      &lt;svg width="55px" height="44px" viewBox="0 0 55 44">
+          &lt;title>twitter&lt;/title>
+          &lt;g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              &lt;g transform="translate(-524.000000, -1383.000000)" fill="#FAFAFA">
+                  &lt;path d="M579,1388.20845 C576.97655,1389.09204 574.801575,1389.68923...">&lt;/path>
+              &lt;/g>
+          &lt;/g>
+      &lt;/svg>
+    &lt;/a>
+  &lt;/li>
+&lt;/ul>
+                  </code></pre>
+                  <p><a href="http://www.sitepoint.com/tips-accessible-svg/" target="_blank">Tips for accessibility</a></p>
                 </section>
                 <section>
                     <h2>Browser Support</h2>
