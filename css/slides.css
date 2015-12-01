@@ -932,6 +932,37 @@ article.transform-origin .example3 {
   transform-origin: 0 50px;
 }
 
+/* source/slides.css */
+@keyframes yourAnimationName {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  30% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100px, 100px);
+  }
+}
+.keyframeExample {
+  border: 1px solid;
+  position: absolute;
+  font-size: 16px;
+  animation: yourAnimationName 2s infinite;
+}
+@keyframes yourAnimationName2 {
+  from {
+    transform: translate(100px, 100px);
+  }
+  to {
+    transform: translate(-100px, 100px);
+  }
+}
+.keyframeExample2 {
+  border: 1px solid;
+  font-size: 16px;
+   animation: yourAnimationName2 2s infinite;
+}
 /* line 594, source/slides.css */
 .media-queries .example {
   height: 100px;

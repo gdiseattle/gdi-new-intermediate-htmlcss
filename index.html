@@ -49,10 +49,6 @@
             </section>
 
             <section>
-                <h2>Thanks to our sponsor:</h2>
-                <img src="images/sponsors/Adobe-logo.png" style="border:none; width: 400px;" alt="Adobe" />
-            </section>
-            <section>
                 <h3>Class notes</h3>
                 <p>All slides are available at <a href="http://gdiseattle.github.io/gdi-new-intermediate-htmlcss">
                   http://gdiseattle.github.io/gdi-new-intermediate-htmlcss</a>
@@ -93,7 +89,6 @@
             </section>
             <section>
                 <h3>Thank you to our Teaching Assistants today</h3>
-                <p><!--FILL IN --></p>
             </section>
             <section>
                 <h3>Now it's all about you!</h3>
@@ -101,11 +96,12 @@
                     <li>Tell us who you are.</li>
                     <li>What do you hope to get out of this class?</li>
                     <li>Unlimited amount of money - where would you travel to?</li>
+                </ul>
             </section>
             <section>
                 <h2>What we'll be covering in this class</h2>
                 <p>We'll be jumping into HTML/CSS right where the beginner class left off.</p>
-                <p>We will not be going over the previous class, we just don't have the time!</p>
+                <p>We will not be going over the previous class, there's too much cool stuff to learn!</p>
             </section>
             <section>
                 <h3>We will be building a profile site from scratch</h3>
@@ -355,98 +351,94 @@
 
             <!-- DOCTYPE -->
             <section>
-                <section>
-                    <h2>HTML5 Doctype</h2>
-                    <pre><code class="xml">
-  &lt;!DOCTYPE html&gt;
-            </code></pre>
-                    <p>
-                        Minimum information required to ensure that a browser renders using standards mode
-                    </p>
-                </section>
-                <section>
-                    <h2>Old Doctypes</h2>
-                    <pre><code class="xml">
-  &lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-  "http://www.w3.org/TR/html4/strict.dtd"&gt;
+                <h2>HTML5 Doctype</h2>
+                <pre><code class="xml">
+&lt;!DOCTYPE html&gt;
+        </code></pre>
+                <p>
+                    Minimum information required to ensure that a browser renders using standards mode
+                </p>
+            </section>
+            <section>
+                <h2>Old Doctypes</h2>
+                <pre><code class="xml">
+&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd"&gt;
 
-  &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
-            </code></pre>
-                </section>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+        </code></pre>
             </section>
 
             <!-- New Elements -->
             <section>
-                <section>
-                    <h2>New Structural Elements</h2>
-                </section>
-                <section>
-                    <h2>&lt;section&gt;</h2>
-                    <ul>
-                        <li>Group together thematically related content</li>
-                        <li>Similar to prior use of the div, but div has no semantic meaning</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>&lt;header&gt;</h2>
-                    <ul>
-                        <li>Container for a group of introductory or navigational aids</li>
-                        <li>Document can have multiple header elements</li>
-                        <li>E.g. One for the page, one for each section</li>
-                        <li>Page header can be identified by screen readers with <code>role="banner"</code></li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>&lt;nav&gt;</h2>
-                    <ul>
-                        <li>Contains major navigational information</li>
-                        <li>Usually a list of links</li>
-                        <li>Often lives in the header</li>
-                        <li>E.g. site navigation</li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>&lt;footer&gt;</h2>
-                    <ul>
-                        <li>Contains information about its containing element</li>
-                        <li>E.g. who wrote it, copyright, links to related content, etc.</li>
-                        <li>Document can have multiple footer elements</li>
-                        <li>E.g. One for the page, one for each section</li>
-                        <li>Page footer can be identified by screen readers with <code>role="contentinfo"</code></li>
-                    </ul>
-                </section>
-                <section>
-                    <h2>&lt;aside&gt;</h2>
-                    <ul>
-                        <li>Tangentially related content</li>
-                        <li>E.g. sidebar, pull quotes</li>
-                    </ul>
-                </section>
+                <h2>New Structural Elements</h2>
+            </section>
+            <section>
+                <h2>&lt;section&gt;</h2>
+                <ul>
+                    <li>Group together thematically related content</li>
+                    <li>Similar to prior use of the div, but div has no semantic meaning</li>
+                </ul>
+            </section>
+            <section>
+                <h2>&lt;header&gt;</h2>
+                <ul>
+                    <li>Container for a group of introductory or navigational aids</li>
+                    <li>Document can have multiple header elements</li>
+                    <li>E.g. One for the page, one for each section</li>
+                    <li>Page header can be identified by screen readers with <code>role="banner"</code></li>
+                </ul>
+            </section>
+            <section>
+                <h2>&lt;nav&gt;</h2>
+                <ul>
+                    <li>Contains major navigational information</li>
+                    <li>Usually a list of links</li>
+                    <li>Often lives in the header</li>
+                    <li>E.g. site navigation</li>
+                </ul>
+            </section>
+            <section>
+                <h2>&lt;footer&gt;</h2>
+                <ul>
+                    <li>Contains information about its containing element</li>
+                    <li>E.g. who wrote it, copyright, links to related content, etc.</li>
+                    <li>Document can have multiple footer elements</li>
+                    <li>E.g. One for the page, one for each section</li>
+                    <li>Page footer can be identified by screen readers with <code>role="contentinfo"</code></li>
+                </ul>
+            </section>
+            <section>
+                <h2>&lt;aside&gt;</h2>
+                <ul>
+                    <li>Tangentially related content</li>
+                    <li>E.g. sidebar, pull quotes</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>&lt;article&gt;</h2>
-                    <ul>
-                        <li>Self-contained related content</li>
-                        <li>E.g. blog posts, news stories, comments, reviews, forum posts</li>
-                    </ul>
-                </section>
+            <section>
+                <h2>&lt;article&gt;</h2>
+                <ul>
+                    <li>Self-contained related content</li>
+                    <li>E.g. blog posts, news stories, comments, reviews, forum posts</li>
+                </ul>
+            </section>
 
-                <section>
-                    <h2>&lt;main&gt;</h2>
-                    <ul>
-                        <li>Semantic container for main content</li>
-                        <li>Only one instance per page allowed, with <a href="http://html5doctor.com/the-main-element/" title="HTML5 Doctor Main element documentation">
-                          some other restrictions</a></li>
-                        <li>Provides a landmark for screen reader users</li>
-                    </ul>
-                </section>
+            <section>
+                <h2>&lt;main&gt;</h2>
+                <ul>
+                    <li>Semantic container for main content</li>
+                    <li>Only one instance per page allowed, with <a href="http://html5doctor.com/the-main-element/" title="HTML5 Doctor Main element documentation">
+                      some other restrictions</a></li>
+                    <li>Provides a landmark for screen reader users</li>
+                </ul>
             </section>
 
             <section>
                 <h3>Let's Develop It</h3>
                 <ul>
-                    <li>Use new HTML elements to layout the site</li>
+                    <li>Use new semantic HTML5 elements to layout the site</li>
                     <li>Refer to the example design for hints.</li>
                 </ul>
             </section>
@@ -537,7 +529,7 @@ body {
             </section>
             <section>
                 <h3>Fixed Nav: Adding a brand</h3>
-                <p>We can use an
+                <p>We can use a single
                     <code>H1</code> with text replacement to include a brand, or logo, in the corner
                     that will still work if images are turned off, making it accessible to screen readers.</p>
                 <pre><code class="xml">
@@ -554,7 +546,8 @@ body {
 </code></pre>
             </section>
             <section>
-                <h3>Fixed Nav: Text replacement &amp; H1s</h3>
+                <h3>Fixed Nav: <br>Text Replacement &amp; H1s</h3>
+                <p>(<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background">CSS Background Reference</a>)</p>
                 <pre><code class="css">#brand {
     text-indent: -90000px;
     background: url(../images/brand.png) no-repeat top left;
@@ -567,12 +560,15 @@ body {
     float: right;
     width: auto;
 }   </code></pre>
+            <p>The background url must match an image in your workshop files. Remember relative URLs?</p>
             </section>
+
             <section>
                 <h3>Why Text Replacement?</h3>
                 <ul>
-                    <li>If we turn the CSS off for this page - the title will still be visible to the browser.</li>
-                    <li>If a user is coming to our site with a screen reader - the title of the site will be readable to them</li>
+                    <li>Use a background image in an accessible way.</li>
+                    <li>If we turn the CSS off for this page, the title will still be visible to the browser.</li>
+                    <li>If a user is coming to our site with a screen reader, the title of the site will be readable to them.</li>
                     <li>Search engines &hearts; it!</li>
                 </ul>
             </section>
@@ -616,8 +612,9 @@ body {
                     </ul>
 
             </section>
+
             <section data-background="#f05b62">
-                <h1 style="color: #fafafa;">Hero Section</h1>
+                <h2 style="color: #fafafa;">Hero Section</h2>
             </section>
             <section>
                 <h3>What is a Hero?</h3>
@@ -700,7 +697,7 @@ body {
 }</code></pre>
                 <p>That should do it</p>
             </section>
-            <section>
+
                 <section data-background="#f05b62">
                     <h1 style="color: #fafafa;">Border Magic</h1>
                 </section>
@@ -749,8 +746,7 @@ body {
 }</code></pre>
                     <img src="images/radius-50.png" alt="" />
                 </section>
-            </section>
-            <section>
+
                 <section data-background="#f05b62">
                     <h1 style="color: #fafafa;">Vendor Prefixes</h1>
                 </section>
@@ -782,31 +778,28 @@ body {
                 </section>
                 <section>
                     <h3>Using Prefixes</h3>
-                    <pre><code class="css">#hero img {
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
+                    <pre><code class="css">#main-content {
+    -webkit-columns: 300px 2;
+       -moz-columns: 300px 2;
+            columns: 300px 2;
 }</code></pre>
                     <p>Order matters! The non-prefixed version should always go last.</p>
                 </section>
                 <section>
                     <h3>NOTE:</h3>
                     <p>While you should always use the vendor prefixes when writing code, today we're just going to use the non-prefixed property.</p>
-                    <p>This is to save time during the code exercises</p>
+                    <p>This is to save time during the code exercises.</p>
                 </section>
-            </section>
             <section data-background="#f05b62">
                 <h1 style="color: #fafafa;">Back to our Hero!</h1>
             </section>
             <section>
                 <h3>Background-size</h3>
                 <p>Notice how the image is too large for the section? Let's fix that with a new property called
-                    <code>background-size</code>
+                    <br><code>background-size</code> (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/background-size">Reference</a>)
                 </p>
                 <pre><code class="css">#hero {
-    background: url(../images/alpinelakes.png) no-repeat top left;
+    background: url(../images/alpinelakes.jpg) no-repeat top left;
     background-size: cover;
     color: #fafafa;
     text-align: center;
@@ -819,21 +812,28 @@ body {
             </section>
 
             <section>
-              <h2>currentColor</h2>
+              <h3>Borders &amp; currentColor</h3>
               <ul>
-                <li>A <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentColor_keyword">keyword</a> for the calculated value of an element's color property</li>
+                <li>Borders can inherit color from the <code>color</code> property.</li>
+                <li><code>currentColor</code> is a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#currentColor_keyword">keyword</a> for the calculated value of that color property.</li>
                 <li>Great for inheriting colors!</li>
               </ul>
               <pre><code class="css">
-.slider {
+#hero p {
   border: 1px solid;
   color: blue;
 }
-.slider .slider-handle {
+#hero p span {
   background: currentColor;
 }
               </pre></code>
               <p><a href="http://simurai.com/blog/2014/05/04/cssconf/#color" target="_blank">Example</a></p>
+            </section>
+
+            <section>
+                <h2>Font Sizes</h2>
+                <p>Setting up a web typography scale could be a whole class by itself. But here is a resource:</p>
+                <p><a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography">A Modern Scale for Web Typography</a></p>
             </section>
 
             <section>
@@ -850,10 +850,6 @@ body {
                 <h1 style="color: #fafafa;">3-column Content Area</h1>
             </section>
             <section>
-                <h3>Why 3 columns?</h3>
-                <p>Because 2 columns is so 2014</p>
-            </section>
-            <section>
                 <h3>3 Column: HTML</h3>
                 <p>Our code should look something like this:</p>
                 <pre><code class="xml">&lt;section id="main-content">
@@ -864,7 +860,7 @@ body {
         &lt;p>I travel to some pretty awesome places...&lt;/p>
         &lt;a href="photos.html" class="btn">See my photos&lt;/a>
     &lt;/article>
-    &lt;!-- Repeat for each column -->
+    &lt;!-- Repeat article for each column -->
 &lt;/section> </code></pre>
 
             </section>
@@ -944,75 +940,69 @@ body {
                         <li>Add a clear-fix after the columns</li>
                     </ul>
             </section>
-            <section>
-                <section data-background="#f05b62">
-                    <h1 style="color: #fafafa;">SVG Graphics</h1>
-                </section>
-                <section>
-                    <h2>SVG Graphics</h2>
-                    <p>Designers everywhere have always wanted to use vector based graphics on their sites because of their quality.</p>
-                    <p>Well now you can!</p>
-                </section>
-                <section>
-                    <h2>It's not that new really</h2>
-                    <p>It's been a W3C (World Wide Web Consortium) since 1999</p>
-                    <p>In recent years browsers are becoming more and more compatable with SVG graphics.</p>
-                    <p>Once upon a time, .png graphics weren't supported in browsers, soon the world will know about SVG!</p>
-                </section>
-                <section>
-                    <h2>How to use SVG today</h2>
-                    <p>Use Adobe Illustrator, or other vector program, to create a high quality image.</p>
-                    <p>Save it as a .svg file.</p>
-                    <p>Save a high res .png image as a fallback.</p>
-                </section>
-                <section>
-                    <h2>Include SVG</h2>
-                    <p>Use SVG as an image:</p>
-                    <pre><code>&lt;img src="image.svg" alt="what's in the image" 
-     onerror="this.onerror=null; this.src='image.png'"></code></pre>
-                    <p>Use SVG as a background image:</p>
-                    <p class="blue">HTML:</p>
-                    <pre><code>&lt;a href="/" class="logo">
-  GDI
-&lt;/a></code></pre>
-                    <p class="blue">CSS:</p>
-                    <pre><code class="css">.logo {
-  display: block;
-  text-indent: -99999px;
-  width: 100px;
-  height: 82px;
-  background: url(kiwi.svg);
-  background-size: 100px 82px;
-}</code></pre>
-                </section>
-                <section>
-                  <h2>Inline SVG</h2>
-                  <p>Alternatively, you can include SVG markup directly in your HTML:</p>
-                  <pre><code class="html">
-&lt;ul id="socialIcons">
-  &lt;li>
-    &lt;a href="http://twitter.com/">
-      &lt;svg width="55px" height="44px" viewBox="0 0 55 44">
-          &lt;title>twitter&lt;/title>
-          &lt;g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              &lt;g transform="translate(-524.000000, -1383.000000)" fill="#FAFAFA">
-                  &lt;path d="M579,1388.20845 C576.97655,1389.09204 574.801575,1389.68923...">&lt;/path>
-              &lt;/g>
-          &lt;/g>
-      &lt;/svg>
-    &lt;/a>
-  &lt;/li>
-&lt;/ul>
-                  </code></pre>
-                  <p><a href="http://www.sitepoint.com/tips-accessible-svg/" target="_blank">Tips for accessibility</a></p>
-                </section>
-                <section>
-                    <h2>Browser Support</h2>
-                    <p>Getting a lot better!</p>
-                    <a href="http://caniuse.com/#search=svg"><img src="images/svg-support.png" alt="SVG support" style="max-height: 360px;" class="plain" /></a>
-                    <p>Sara Soueidan has written a lot of great articles about <a href="http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/">styling SVG with CSS</a>.</p>
-                </section>
+            
+            <section data-background="#f05b62">
+                <h1 style="color: #fafafa;">SVG Graphics</h1>
             </section>
+            <section>
+                <h2>SVG Graphics</h2>
+                <p>Designers everywhere have always wanted to use vector based graphics on their sites because of their quality.</p>
+                <p>Well now you can!</p>
+            </section>
+            <section>
+                <h2>How to use SVG today</h2>
+                <p>Use Adobe Illustrator, or other vector program, to create a high quality image.</p>
+                <p>Save it as an <code>.svg</code> file.</p>
+                <p>Save a high resolution <code>.png</code> image as a fallback.</p>
+            </section>
+            <section>
+                <h2>Include SVG</h2>
+                <p>Use SVG as an image with PNG fallback:</p>
+                <pre><code>&lt;img src="image.svg" alt="what's in the image" 
+ onerror="this.onerror=null; this.src='image.png'"></code></pre>
+                <p>Use SVG as a background image:</p>
+                <p class="blue" style="margin-bottom:0;">HTML:</p>
+                <pre><code>&lt;a href="/" class="logo">
+Girl Develop It
+&lt;/a></code></pre>
+                <p class="blue" style="margin-bottom:0;">CSS:</p>
+                <pre><code class="css">.logo {
+    display: block;
+    text-indent: -99999px;
+    width: 100px;
+    height: 82px;
+    background: url(logo.svg);
+    background-size: 100px 82px;
+}</code></pre>
+            </section>
+            <section>
+              <h2>Inline SVG</h2>
+              <p>Alternatively, you can put SVG markup directly into your HTML:</p>
+              <pre><code class="html">
+&lt;ul id="socialIcons">
+&lt;li>
+&lt;a href="http://twitter.com/">
+  &lt;svg width="55px" height="44px" viewBox="0 0 55 44">
+      &lt;title>twitter&lt;/title>
+      &lt;g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          &lt;g transform="translate(-524.000000, -1383.000000)" fill="#FAFAFA">
+              &lt;path d="M579,1388.20845 C576.97655,1389.09204 574.801575,1389.68923...">&lt;/path>
+          &lt;/g>
+      &lt;/g>
+  &lt;/svg>
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+              </code></pre>
+              <p><a href="http://www.sitepoint.com/tips-accessible-svg/" target="_blank">Tips for accessibility</a></p>
+            </section>
+            <section>
+                <h2>Browser Support</h2>
+                <p>Getting a lot better!</p>
+                <a href="http://caniuse.com/#search=svg"><img src="images/svg-support.png" alt="SVG support" style="max-height: 360px;" class="plain" /></a>
+                <p>Sara Soueidan has written a lot of great articles about <a href="http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/">styling SVG with CSS</a>. Also <a href="https://www.youtube.com/watch?v=3TP2UVkbGHs">videos</a>, if that helps!</p>
+            </section>
+            
             <section>
                 <h3>SVG Social Icons</h3>
                 <p>Now that we know how awesome SVG graphics are, let's use them in our social links section.</p>
@@ -1026,7 +1016,7 @@ body {
                 &lt;img src="images/facebook.svg" alt="Facebook" />
             &lt;/a>
         &lt;/li>
-        &lt;!-- Repeat for all social links you want to include -->
+        &lt;!-- Repeat li for each social link you want to include -->
     &lt;/ul>
 &lt;/section>
 </code></pre>
@@ -1070,7 +1060,7 @@ body {
                 <h3>Develop It!</h3>
                 <ul>
                     <li>Style the headline using the Descendant Selector.</li>
-                    <li>If you have Illustrator or another program to modify .svg graphics, change the colors to match your site.</li>
+                    <li>If you have Illustrator or another program to modify <code>.svg</code> files, change the colors to match your site.</li>
                 </ul>
             </section>
 
@@ -1245,6 +1235,7 @@ h1, h2, h3, h4, h5, h6 {
             <!--Text Shadow-->
       <section>
         <h2>text-shadow</h2>
+        <p>text-shadow: offset-x offset-y blur-radius color</p>
         <pre><code>#example1 { text-shadow: 2px 2px 10px red; }
 
 #example2 {
@@ -1293,11 +1284,11 @@ text-shadow: 1px 1px 10px red,
         </section>
         <section>
           <h3>box-shadow</h3>
-          <p>box-shadow: offset-x offset-y blur spread color</p>
+          <p>box-shadow: inset offset-x offset-y blur spread color</p>
           <pre><code>
-.example { box-shadow: 0 2px 5px 0px red; }
+.example { box-shadow: inset 0 2px 5px 0px red; }
           </code></pre>
-          <div style="box-shadow: 0 2px 5px 0px red; height: 100px; width: 100px; border: 2px solid black; margin: 0 auto;">
+          <div style="box-shadow: inset 0 2px 5px 0px red; height: 100px; width: 100px; border: 2px solid black; margin: 0 auto;">
           </div>
         </section>
         <section>
@@ -1308,7 +1299,6 @@ text-shadow: 1px 1px 10px red,
         </section>
         
         <!-- Gradients-->
-      <section>
         <section data-background="#f05b62">
                 <h2 style="color: #fafafa;">CSS Gradients</h2>
             </section>
@@ -1400,21 +1390,17 @@ background-image: linear-gradient(bottom right, red, white);
           <h2>CSS gradients are a pain to do from scratch</h2>
           <p>That's why people have made things like the <a href="http://www.colorzilla.com/gradient-editor/" target="_blank">Gradient Editor</a> to make our lives easier!</p>
         </section>
-      
-
 
         <section>
             <h3>Develop It!</h3>
             <p>Add a background gradient to a section of your site.</p>
         </section>
-    </section>
         
-        <section>
           <section data-background="#f05b62">
-                <h2 style="color: #fafafa;">Transitions</h2>
-                <h4 style="color: #fafafa;">Allow property changes in CSS values to occur smoothly over a specified duration</h4>
-                <h4 style="color: #fafafa;">Create some awesome effects without any JavaScript</h4>
-            </section>
+            <h2 style="color: #fafafa;">Transitions</h2>
+            <h4 style="color: #fafafa;">Allow property changes in CSS values to occur smoothly over a specified duration</h4>
+            <h4 style="color: #fafafa;">Create some awesome effects without any JavaScript</h4>
+        </section>
         <section>
           <h2>Transition Triggers</h2>
           <ul>
@@ -1508,18 +1494,16 @@ background-image: linear-gradient(bottom right, red, white);
             <p>Pick a transition property and apply it to an element.</p>
             <p>Hint: The transition will only work if it has a pseudo class, like <code>:hover</code> or <code>:focus</code></p>
         </section>
-      </section>
         
         <!-- Transformations-->
-      <section>
         <section data-background="#f05b62">
-                <h2 style="color: #fafafa;">Transforms</h2>
-                <h4 style="color: #fafafa;">Allow elements rendered by CSS to be transformed in space</h4>
+            <h2 style="color: #fafafa;">Transforms</h2>
+            <h4 style="color: #fafafa;">Allow elements rendered by CSS to be transformed in space</h4>
         </section>
         <section>
           <h2>Transform: Scale</h2>
           <p>scales the element</p>
-          <p>transform:  scale(sx[, sy]);</p>
+          <p>transform: scale(x, y);</p>
           <article class="transform-scale">
             <div class="example1">
               scale(2);
@@ -1563,7 +1547,7 @@ background-image: linear-gradient(bottom right, red, white);
         <section>
           <h2>Transform: Translate</h2>
           <p>move element using x and y coordinates</p>
-          <p>transform: translate(ax[, ay]);</p>
+          <p>transform: translate(x, y);</p>
           <article class="transform-translate">
             <div class="example1">
               translate(20px);
@@ -1584,15 +1568,15 @@ background-image: linear-gradient(bottom right, red, white);
           <p>transform-origin: x-offset y-offset;</p>
           <article class="transform-origin">
             <div class="example1">
-              transform-origin(top, left)
+              transform-origin: top left;
             </div>
 
             <div class="example2">
-              transform-origin(50%, 50%)
+              transform-origin: 50% 50%;
             </div>
 
             <div class="example3">
-              transform-origin(0, 50px)
+              transform-origin: 0 50px;
             </div>
           </article>
         </section>
@@ -1602,12 +1586,86 @@ background-image: linear-gradient(bottom right, red, white);
             <p>Hint: The transforms, like transitions, will only work if it has a pseudo class, like <code>:hover</code></p>
             <p>Extra Credit: Use it with transition to make the transform smoother.</p>
         </section>
-      </section>
-
 
         <section data-background="#f05b62">
-                <h2 style="color: #fafafa;">Responsive Web Design (RWD)</h2>
-            </section>
+            <h2 style="color: #fafafa;">Keyframe Animations</h2>
+            <h3 style="color: #fafafa;">Animate over an arbitrary number of frames using CSS.</h3>
+        </section>
+
+        <section>
+            <h3>The Syntax</h3>
+            <p>Use custom percentages for your tweens, then reference them by their identifier.</p>
+            <pre><code class="css">
+@keyframes identifier {
+  0% { top: 0; }
+  50% { top: 30px; }
+  50% { top: 10px; }
+  100% { top: 0; }
+}
+.someElement {
+ /* @keyframes duration | timing-function | delay | 
+   iteration-count | direction | fill-mode | play-state | name */
+  animation: 3s ease-in 1s 2 reverse both paused slidein;
+}
+            </code></pre>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/animation">CSS Reference</a></p>
+        </section>
+
+        <section>
+            <h3>Animation: Browser Support</h3>
+            <a href="http://caniuse.com/#search=css-animation"><img src="images/animation-support.png" alt="Caniuse: Animation"></a>
+        </section>
+
+        <section>
+            <h3>Animating Multiple Steps</h3>
+            <pre><code class="css">
+@keyframes yourAnimationName {
+  0% {
+    transform: translate(100px, 100px);
+  }
+  30% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100px, 100px);
+  }
+}
+
+#someElement {
+   animation: yourAnimationName 2s infinite;
+}
+            </code></pre>
+            <button class="keyframeExample">Demo</button>
+            <p style="margin-top:1.5em;">Note: Using vendor prefixes will get better cross-browser support.</p>
+        </section>
+
+        <section>
+            <h3>Animating TWO Steps</h3>
+            <pre><code class="css">
+@keyframes yourAnimationName {
+  from {
+    transform: translate(100px, 100px);
+  }
+  to {
+    transform: translate(-100px, 100px);
+  }
+}
+
+#someElement {
+   animation: yourAnimationName 2s infinite;
+}
+            </code></pre>
+            <button class="keyframeExample2">Demo</button>
+        </section>
+
+        <section>
+            <h3>Let's Develop It!</h3>
+            <p>Add keyframe animations to your portfolio page, keeping in mind that simplicity is best.</p>
+        </section>
+
+        <section data-background="#f05b62">
+            <h2 style="color: #fafafa;">Responsive Web Design (RWD)</h2>
+        </section>
         <section>
           <h2>What is it!?</h2>
           <p>RWD is a design approach that suggests that the design &amp; development of a site shoud respond to the user's behavior and environment.</p>
@@ -1674,7 +1732,7 @@ background-image: linear-gradient(bottom right, red, white);
   max-width: 100%;
 }</code></pre>
         </section>
-        <section>
+
           <section>
             <h2>Media Queries</h2>
             <p><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Media_queries">Media queries</a> apply certain CSS in certain situations.</p>
@@ -1687,13 +1745,13 @@ background-image: linear-gradient(bottom right, red, white);
             </ul>
           </section>
           <section>
-            <h2>Include Media Queries Last</h2>
+            <h3>Include Media Queries Last</h3>
             <p>They will overwrite previous styles because they are last in the cascade.</p>
-            <div>Here's the CSS for #header-image</div>
+            <div>Here's the CSS for <code>#header-image</code></div>
 
-            <p><img src="images/mq-normal-style.png" width="380px"/></p>
+            <p><img src="images/mq-normal-style.png" style="width:380px"/></p>
             <div>And here are the media queries that call for the larger image to be used for screens over 1200px wide, and to turn off the header image if the site is printed.</div>
-            <p><img src="images/mq-larger-img.png" height="120px"/><img src="images/mq-print.png" height="120px"/></p>
+            <p><img src="images/mq-larger-img.png" alt="" style="height:120px"/><img src="images/mq-print.png" alt="" style="height:120px"/></p>
           </section>
           <section>
             <h2>Standard MQs</h2>
@@ -1720,8 +1778,7 @@ background-image: linear-gradient(bottom right, red, white);
               <li>Resolution - Retina or normal.</li>
             </ul>
           </section>
-        </section>
-        <section>
+
           <section>
             <h2>Mobile First</h2>
             <p>By designing sites with mobile first in mind, it makes scaling them down a lot easier.</p>
@@ -1729,17 +1786,17 @@ background-image: linear-gradient(bottom right, red, white);
           </section>
           <section>
             <h2>iPhone</h2>
-            <img src="images/media-queries-phone.png" alt="" />
+            <img src="images/media-queries-phone.png" alt="" style="max-height:700px" />
           </section>
           <section>
             <h2>Tablet</h2>
-            <img src="images/media-queries-tablet.png" alt="" />
+            <img src="images/media-queries-tablet.png" alt="" style="max-height:700px" />
           </section>
           <section>
             <h2>Desktop</h2>
-            <img src="images/media-queries-desktop.png" alt="" />
+            <img src="images/media-queries-desktop.png" alt="" style="max-height:700px" />
           </section>
-        </section>
+        
           <section>
           <h2>Viewport Meta</h2>
           <p>Use this to control the size of the viewport on touch devices.</p>
@@ -1780,11 +1837,11 @@ user-scalable=true"></code></pre>
               <h2>2x Images</h2>
               <div class="left" style="width:50%;">
               <p class="green">Regular resolution icon</p>
-              <img src="images/119-piggy-bank.png" />
+              <img src="images/119-piggy-bank.png" alt="" />
               </div>
                <div class="right" style="width:50%;">
               <p class="green">2x resolution icon</p>
-              <img src="images/119-piggy-bank@2x.png" />
+              <img src="images/119-piggy-bank@2x.png" alt="" />
               </div>
 
 <pre style="clear: both;"><code>@media 
@@ -1814,14 +1871,14 @@ user-scalable=true"></code></pre>
             <section>
               <h2>Twitter's Bootstrap</h2>
               <p>By far the most popular front-end framework out there.</p>
-              <img src="images/bootstrap.png" style="height:400px"/>
+              <img src="images/bootstrap.png" style="height:400px" alt="" />
               <p><a href="http://getbootstrap.com/">Download</a></p>
             </section>
             
             <section>
               <h2>Foundation</h2>
               <p>Another very popular framework that is just as robust at bootstrap - but in a different way.</p>
-              <img src="images/foundation.png" style="height:400px"/>
+              <img src="images/foundation.png" style="height:400px" alt="" />
               <p><a href="http://foundation.zurb.com/">Download</a></p>
             </section>
             <section>
@@ -1845,111 +1902,11 @@ user-scalable=true"></code></pre>
                 <li>Remembering all the class names can be overwhelming</li>
               </ul>
             </section>
-          </section>
-          <section>
+
             <section>
-              <h2>Less &amp; Sass?!</h2>
-              <p>These are two very popular CSS preprocessors</p>
+                <h2>Questions</h2>
+                <h3 style="font-size: 1000%; color: #03ACFF;">?</h3>
             </section>
-            <section>
-              <h2>What the what is a CSS Preprocessor?</h2>
-              <p>CSS preprocessors take code written in the preprocessed language and then convert that code into the same old css we’ve been writing for years.</p>
-              <p>Since we're not writing straight CSS, we're not limited to the restrictions of the language.</p>
-            </section> 
-            <section>
-              <h2>What they do</h2>
-              <ul>
-              <li><strong>Mixins – </strong>Classes for classes.</li>
-              <li><strong>Parametric mixins – </strong>Classes to which you can pass parameters, like functions.</li>
-              <li><strong>Nested Rules – </strong>Classes within classes, which cut down on repetitive code.</li>
-              <li><strong>Operations – </strong>Math within CSS.</li>
-              <li><strong>Color functions – </strong>Edit your colors.</li>
-              <li><strong>Namespaces – </strong>Groups of styles that can be called by references.</li>
-              <li><strong>Scope – </strong>Make local changes to styles.</li>
-              <li><strong>JavaScript evaluation – </strong>JavaScript expressions evaluated in CSS.</li>
-              </ul>
-            </section>
-            <section>
-              <h2>Some highlights</h2>
-              <p>Mixins!</p>
-<pre><code>/* Less */ .rounded-corners (@radius: 5px) {
-  -webkit-border-radius: @radius;
-  -moz-border-radius: @radius;
-  -ms-border-radius: @radius;
-  -o-border-radius: @radius;
-  border-radius: @radius;
-}
-
-#footer {
-  .rounded-corners(10px);
-}</code></pre>
-<pre><code>
-  /* Compiled CSS read by the browser */
-  #footer {
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-}</code></pre>
-  </section>
-  <section>
-    <h2>Nested Rules</h2>
-<pre><code>// Less
-
-#header {
-  h1 {
-    font-size: 26px;
-    font-weight: bold;
-  }
-  p { font-size: 12px;
-    a { text-decoration: none;
-      &:hover { border-width: 1px }
-    }
-  }
-}</code></pre>
-<pre><code>/* Compiled CSS */
-
-#header h1 {font-size: 26px;font-weight: bold;}
-#header p {font-size: 12px;}
-#header p a {text-decoration: none;}
-#header p a:hover {border-width: 1px;}</code></pre>
-  
-          </section>
-          <section>
-            <h2>Functions</h2>
-            <p>Less</p>
-<pre><code>p {
-  color: lighten(@base, 5%);
-}</code></pre>
-            <p>Sass</p>
-<pre><code>p {
-  color: hsl($hue: 0, $saturation: 100%, $lightness: 50%);
-}</code></pre>
-          </section>
-          <section>
-            <h2>Variables</h2>
-            <p>Less</p>
-<pre><code>// Less 
-@blue: #199FD9;
-p {
-    color: @blue;
-}
-// Compiled CSS
-p {
-  color: #199FD9;
-}</code></pre>
-<p>Sass</p>
-<pre><code>// Sass 
-$blue: #199FD9;
-p {
-    color: $blue;
-}
-// Compiled CSS
-p {
-  color: #199FD9;
-}</code></pre>
-</section>
         </div>
         <footer role="contentinfo">
             <div class="copyright">
